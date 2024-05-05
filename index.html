@@ -7,7 +7,22 @@
 </head>
 <body>
     <div id="root">
-        <h1> Hello World </h1>
+        <!-- Simply or directly writting the Hello World inside the h1 tag with the help of html. -->
+        <!-- Example is given below. -->
+        <!-- <h1> Hello World  </h1> -->
     </div>
+    <script>
+        // Same above thing can be write with the help of JavaScript ;
+        // But to write JavaScript we have to use the script tag for writting the JS ;
+        
+        const heading = document.createElement('h1');
+        // Step 1.)  to create element tag ;
+        heading.innerHTML = " Hello World ! ";
+        // Step 2.)  to write inside the tag ; 
+        const rootId = document.getElementById("root");
+        // Step 3.)  to select or get the element of id or class to put inside it;
+        rootId.appendChild(heading);
+        // Step 4.)  finally, pushing the content insidet the tag mention id or class;
+    </script>
 </body>
 </html>
