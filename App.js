@@ -2,7 +2,7 @@ const heading = React.createElement("h1", {id : "header", xyz : "abc"}, "Hello W
 console.log(heading);// // Now h1 tag becomes an object ;
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
+root.render(heading);// // Shiva Chouhan will be over-ride by Hello World written by using React ;
 
 
 ///////********************************************************************************************************** */
@@ -47,6 +47,8 @@ root2.render(parent);
 const gardian = React.createElement("div", {id : "parent"}, 
     React.createElement("div", {id : "child"}, 
         [React.createElement("h2", {}, "I am h2 tag."), React.createElement("h3", {}, "I am h3 tag.")]
+        // if there are lots of React.createElement then code is going to become a mess.
+        // Therefore, to get rid of this React provide a JSX write a JS code.
     )
 )
 
