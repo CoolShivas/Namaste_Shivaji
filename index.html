@@ -6,23 +6,58 @@
     <title> Namaste JS </title>
 </head>
 <body>
+    
     <div id="root">
         <!-- Simply or directly writting the Hello World inside the h1 tag with the help of html. -->
         <!-- Example is given below. -->
-        <!-- <h1> Hello World  </h1> -->
+        <!-- <h1> Hello World written using Html. </h1> -->
     </div>
-    <script>
+
+    
+    
+    <!-- //////********************************************************************************************///// -->
+
+
+
+    <!-- <script>
         // Same above thing can be write with the help of JavaScript ;
         // But to write JavaScript we have to use the script tag for writting the JS ;
         
         const heading = document.createElement('h1');
         // Step 1.)  to create element tag ;
-        heading.innerHTML = " Hello World ! ";
+        heading.innerHTML = " Hello World written using JavaScript. ";
         // Step 2.)  to write inside the tag ; 
         const rootId = document.getElementById("root");
         // Step 3.)  to select or get the element of id or class to put inside it;
         rootId.appendChild(heading);
         // Step 4.)  finally, pushing the content insidet the tag mention id or class;
+    </script> -->
+
+    
+    
+    <!-- /////*********************************************************************************************///// -->
+
+
+    <!-- Now, writting the same thing using react with the help of CDN Links to write the Hello World -->
+
+    <!-- Firstly, pasting the CDN Links that means we have injected the react inside this project with the help of these two below links-->
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <!-- The first script is the react file or core of react or core file of react. -->
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- The second script is releated to DOM for modification or useful for DOM operation or it is like a bridge to connect with the DOM. -->
+
+    <script>
+        
+        const heading = React.createElement("h1", {}, "Hello World written by using React");
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        
+        root.render(heading);
+
     </script>
+    
+    
+
 </body>
 </html>
