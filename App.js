@@ -47,6 +47,7 @@ root2.render(parent);
 const gardian = React.createElement("div", {id : "parent"}, 
     React.createElement("div", {id : "child"}, 
         [React.createElement("h2", {}, "I am h2 tag."), React.createElement("h3", {}, "I am h3 tag.")]
+        // If there are lots of tags or heading we have to put inside an array as mention above;
         // if there are lots of React.createElement then code is going to become a mess.
         // Therefore, to get rid of this React provide a JSX write a JS code.
     )

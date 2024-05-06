@@ -1,0 +1,24 @@
+{
+  "name": "0000--namaste_react",
+  "version": "1.0.0",
+  "description": "This is Namaste Shivaji by Shiva Chouhan",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/CoolShivas/Namaste_Shivaji.git)"
+  },
+  "keywords": [
+    "react",
+    "namaste_shivaji",
+    "shiva",
+    "chouhan"
+  ],
+  "author": "Shiva Chouhan",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
